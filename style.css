@@ -7,31 +7,25 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
+/* Header Styling - Removed fixed position */
 header {
     background: #060A15;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    position: fixed;
     width: 100%;
-    top: 0;
     z-index: 1000;
-    flex-wrap: wrap;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
 }
 
 nav ul li {
-    margin: 10px 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -66,43 +60,43 @@ nav ul li a {
 
 /* About Us Section */
 #about {
-    padding: 60px 20px;
+    padding: 50px 15px;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
 }
 
 #about h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 #about p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Services Section */
 #services {
-    padding: 60px 20px;
+    padding: 50px 15px;
     text-align: center;
 }
 
 #services h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 .service-box {
     background: #0E1628;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
-    max-width: 350px;
-    margin: 15px auto;
-    font-size: 18px;
+    width: 90%;
+    max-width: 320px;
+    margin: 10px auto;
+    font-size: 16px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -114,14 +108,14 @@ nav ul li a {
 /* Gallery Section */
 .gallery-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 40px 20px;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 10px;
 }
 
 .gallery-container img {
-    width: 100%;
+    width: 48%;
     max-width: 250px;
     height: auto;
     border-radius: 5px;
@@ -135,12 +129,12 @@ nav ul li a {
 /* Contact Section */
 #contact {
     background: #080E1A;
-    padding: 60px 20px;
+    padding: 50px 15px;
     text-align: center;
 }
 
 #contact h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -155,7 +149,7 @@ nav ul li a {
 #contact-form input,
 #contact-form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
@@ -172,7 +166,7 @@ nav ul li a {
 #contact-form button {
     background: #FDE49B;
     color: #080E1A;
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -187,7 +181,7 @@ nav ul li a {
 
 #contact p {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* Responsive Design */
@@ -206,10 +200,6 @@ nav ul li a {
         margin: 5px 0;
     }
 
-    .hero {
-        padding: 80px 20px 40px;
-    }
-
     .hero h2 {
         font-size: 28px;
     }
@@ -218,35 +208,18 @@ nav ul li a {
         font-size: 15px;
     }
 
-    #about p {
-        font-size: 15px;
-    }
-
-    .service-box {
-        width: 100%;
-        max-width: 100%;
-        font-size: 16px;
-    }
-
-    .gallery-container {
-        justify-content: center;
+    #about h2,
+    #services h2,
+    #contact h2 {
+        font-size: 24px;
     }
 
     .gallery-container img {
-        width: calc(50% - 10px); /* 2 images per row */
+        width: 48%; /* Two images side by side */
         height: auto;
     }
 
-    #contact-form {
-        padding: 15px;
-    }
-
-    #contact-form input,
-    #contact-form textarea {
-        font-size: 14px;
-    }
-
-    #contact-form button {
-        font-size: 16px;
+    .service-box {
+        width: 95%;
     }
 }
